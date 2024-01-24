@@ -1,139 +1,103 @@
 // Utility.js
 import React from 'react';
+import { TiWeatherStormy } from 'react-icons/ti'; // Thunderstorm
+import { IoMdRainy } from 'react-icons/io'; // Rain
+import { IoMdSnow } from 'react-icons/io'; // Snow
+import { IoMdPartlySunny } from 'react-icons/io'; // Drizzle
+import { IoMdSnow } from 'react-icons/io'; // Snow
+import { IoMdCloudy } from 'react-icons/io'; // Cloudy
+import { IoMdSunny } from 'react-icons/io'; // Clear Sky
+import { IoMdHelpBuoy } from 'react-icons/io'; // Default Icon
 
 export const getWeatherIcon = (weatherCode, large = false) => {
-  const fontSize = large ? '2em' : '1em';
+  const Icon = large ? '2em' : '1em';
 
   switch (weatherCode) {
     case 't01d':
     case 't01n':
-      return <span style={{ fontSize }}>⛈</span>; // Thunderstorm with light rain
-
     case 't02d':
     case 't02n':
-      return <span style={{ fontSize }}>⛈</span>; // Thunderstorm with rain
-
     case 't03d':
     case 't03n':
-      return <span style={{ fontSize }}>⛈</span>; // Thunderstorm with heavy rain
-
     case 't04d':
     case 't04n':
-      return <span style={{ fontSize }}>⛈</span>; // Thunderstorm with light drizzle
-
     case 't05d':
     case 't05n':
-      return <span style={{ fontSize }}>⛈</span>; // Thunderstorm with hail
+      return <TiWeatherStormy style={{ fontSize: Icon }} />; // Thunderstorm
 
     case 'd01d':
     case 'd01n':
-      return <span style={{ fontSize }}>🌦</span>; // Light Drizzle
-
     case 'd02d':
     case 'd02n':
-      return <span style={{ fontSize }}>🌦</span>; // Drizzle
-
     case 'd03d':
     case 'd03n':
-      return <span style={{ fontSize }}>🌧</span>; // Heavy Drizzle
+      return <IoMdPartlySunny style={{ fontSize: Icon }} />; // Drizzle
 
     case 'r01d':
     case 'r01n':
-      return <span style={{ fontSize }}>🌧</span>; // Light Rain
-
     case 'r02d':
     case 'r02n':
-      return <span style={{ fontSize }}>🌧</span>; // Moderate Rain
-
     case 'r03d':
     case 'r03n':
-      return <span style={{ fontSize }}>🌧</span>; // Heavy Rain
-
     case 'f01d':
     case 'f01n':
-      return <span style={{ fontSize }}>🌧</span>; // Freezing rain
-
     case 'r04d':
     case 'r04n':
-      return <span style={{ fontSize }}>🌧</span>; // Light shower rain
-
     case 'r05d':
     case 'r05n':
-      return <span style={{ fontSize }}>🌧</span>; // Shower rain
-
     case 'r06d':
     case 'r06n':
-      return <span style={{ fontSize }}>🌧</span>; // Heavy shower rain
-
-    case 's03d':
-    case 's03n':
-      return <span style={{ fontSize }}>❄️</span>; // Heavy Snow
-
-    case 's04d':
-    case 's04n':
-      return <span style={{ fontSize }}>🌨</span>; // Mix snow/rain
-
-    case 's05d':
-    case 's05n':
-      return <span style={{ fontSize }}>🌨</span>; // Sleet
+      return <IoMdRainy style={{ fontSize: Icon }} />; // Rain
 
     case 's01d':
     case 's01n':
-      return <span style={{ fontSize }}>🌨</span>; // Snow shower
-
     case 's02d':
     case 's02n':
-      return <span style={{ fontSize }}>🌨</span>; // Heavy snow shower
-
+    case 's03d':
+    case 's03n':
+    case 's04d':
+    case 's04n':
+    case 's05d':
+    case 's05n':
     case 's06d':
     case 's06n':
-      return <span style={{ fontSize }}>❄️</span>; // Flurries
+      return <IoMdSnow style={{ fontSize: Icon }} />; // Snow
 
     case 'a01d':
     case 'a01n':
-      return <span style={{ fontSize }}>🌫</span>; // Mist
-
     case 'a02d':
     case 'a02n':
-      return <span style={{ fontSize }}>🌫</span>; // Smoke
-
     case 'a03d':
     case 'a03n':
-      return <span style={{ fontSize }}>🌫</span>; // Haze
-
     case 'a04d':
     case 'a04n':
-      return <span style={{ fontSize }}>🌫</span>; // Sand/dust
-
     case 'a05d':
     case 'a05n':
-      return <span style={{ fontSize }}>🌫</span>; // Fog
-
     case 'a06d':
     case 'a06n':
-      return <span style={{ fontSize }}>🌫</span>; // Freezing Fog
+      return <IoMdHelpBuoy style={{ fontSize: Icon }} />; // Atmospheric
 
     case 'c01d':
     case 'c01n':
-      return <span style={{ fontSize }}>☀️</span>; // Clear sky
+      return <IoMdSunny style={{ fontSize: Icon }} />; // Clear Sky
 
     case 'c02d':
     case 'c02n':
-      return <span style={{ fontSize }}>🌤</span>; // Few clouds
+      return <IoMdPartlySunny style={{ fontSize: Icon }} />; // Few Clouds
 
     case 'c03d':
     case 'c03n':
-      return <span style={{ fontSize }}>⛅</span>; // Scattered clouds
+      return <IoMdCloudy style={{ fontSize: Icon }} />; // Scattered Clouds
 
     case 'c04d':
     case 'c04n':
-      return <span style={{ fontSize }}>🌥</span>; // Broken clouds
+      return <IoMdCloudy style={{ fontSize: Icon }} />; // Broken Clouds
 
     case 'c05d':
     case 'c05n':
-      return <span style={{ fontSize }}>☁️</span>; // Overcast clouds
+      return <IoMdCloudy style={{ fontSize: Icon }} />; // Overcast Clouds
 
     default:
-      return <span style={{ fontSize }}>❓</span>; // Default icon for unknown weather codes
+      return <IoMdHelpBuoy style={{ fontSize: Icon }} />; // Default icon for unknown weather codes
   }
 };
