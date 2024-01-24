@@ -1,0 +1,78 @@
+/* Forecast.css */
+.forecast-container {
+  background-color: #475b70;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.forecast-heading {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.forecast-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.forecast-card {
+  width: calc(33.33% - 20px);
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0;
+  text-align: center;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.forecast-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.forecast-icon {
+  font-size: 2.5em;
+  color: #3498db;
+}
+
+.forecast-details {
+  margin-top: 15px;
+}
+
+.forecast-date {
+  font-weight: bold;
+  color: #333;
+}
+
+.forecast-description {
+  color: #555;
+}
+
+.forecast-temperature {
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+/* Media Query for 600px and below */
+@media screen and (max-width: 600px) {
+  .forecast-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .forecast-card {
+    width: calc(50% - 10px);
+    margin: 10px 0;
+  }
+}
