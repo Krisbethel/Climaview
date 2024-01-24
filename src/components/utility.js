@@ -4,7 +4,6 @@ import { TiWeatherStormy } from 'react-icons/ti'; // Thunderstorm
 import { IoMdRainy } from 'react-icons/io'; // Rain
 import { IoMdSnow } from 'react-icons/io'; // Snow
 import { IoMdPartlySunny } from 'react-icons/io'; // Drizzle
-import { IoMdSnow } from 'react-icons/io'; // Snow
 import { IoMdCloudy } from 'react-icons/io'; // Cloudy
 import { IoMdSunny } from 'react-icons/io'; // Clear Sky
 import { IoMdHelpBuoy } from 'react-icons/io'; // Default Icon
