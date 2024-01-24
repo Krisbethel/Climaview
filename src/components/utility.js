@@ -65,14 +65,6 @@ export const getWeatherIcon = (weatherCode, large = false) => {
     case 'r06n':
       return <span style={{ fontSize }}>🌧</span>; // Heavy shower rain
 
-    case 's01d':
-    case 's01n':
-      return <span style={{ fontSize }}>❄️</span>; // Light snow
-
-    case 's02d':
-    case 's02n':
-      return <span style={{ fontSize }}>❄️</span>; // Snow
-
     case 's03d':
     case 's03n':
       return <span style={{ fontSize }}>❄️</span>; // Heavy Snow
@@ -84,10 +76,6 @@ export const getWeatherIcon = (weatherCode, large = false) => {
     case 's05d':
     case 's05n':
       return <span style={{ fontSize }}>🌨</span>; // Sleet
-
-    case 's06d':
-    case 's06n':
-      return <span style={{ fontSize }}>🌨</span>; // Heavy sleet
 
     case 's01d':
     case 's01n':
