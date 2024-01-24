@@ -10,23 +10,11 @@ ClimaView boasts a user-friendly interface that seamlessly blends functionality 
 ### 2. Real-Time Updates
 Stay ahead of the weather curve with our real-time updates. ClimaView provides the latest information on temperature, humidity, wind speed, and more, keeping you informed with the most current data available.
 
-### 3. Interactive Maps
-Dive deep into weather patterns with our interactive maps. Explore current conditions, forecasts, and historical data through visually engaging maps that make the weather come to life.
 
-### 4. Personalized Dashboards
-Tailor your ClimaView experience by creating personalized dashboards. Choose the weather metrics that matter most to you and arrange them for quick and easy access.
-
-### 5. Detailed Forecasts
+### 3. Detailed Forecasts
 Plan your days with confidence using ClimaView's detailed forecasts. From hourly predictions to extended outlooks, we provide the information you need to make informed decisions.
 
-### 6. Severe Weather Alerts
-Safety first! ClimaView keeps you informed and safe with real-time alerts for severe weather conditions in your area. Receive notifications for storms, hurricanes, and other potential risks.
 
-### 7. Educational Insights
-Learn about the fascinating world of meteorology through ClimaView's educational insights. Engage with articles, infographics, and videos that unravel the science behind weather phenomena.
-
-### 8. Community Connection
-Join a community of weather enthusiasts and share your observations, experiences, and tips. Connect with fellow users, meteorologists, and outdoor enthusiasts who share your passion for the weather.
 
 ## Installation
 
@@ -53,6 +41,6 @@ ClimaView is licensed under the MIT License(LICENSE.md).
 
 ## Contact
 
-For any inquiries, please contact us at info@climaview.com(mailto:abundanceezeala@.com).
+For any inquiries, please contact us at my_mail(mailto:abundanceezeala@gmail.com).
 
 Happy exploring with ClimaView!
