@@ -41,6 +41,6 @@ ClimaView is licensed under the MIT License(LICENSE.md).
 
 ## Contact
 
-For any inquiries, please contact us at my_mail(mailto:abundanceezeala@gmail.com).
+For any inquiries, please contact us at abundanceezeala@gmail.com (mailto:abundanceezeala@gmail.com).
 
 Happy exploring with ClimaView!
