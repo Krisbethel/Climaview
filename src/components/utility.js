@@ -7,7 +7,7 @@ import { IoMdPartlySunny } from 'react-icons/io'; // Drizzle
 import { IoMdCloudy } from 'react-icons/io'; // Cloudy
 import { IoMdSunny } from 'react-icons/io'; // Clear Sky
 import { IoMdHelpBuoy } from 'react-icons/io'; // Default Icon
-
+//nice
 export const getWeatherIcon = (weatherCode, large = false) => {
   const Icon = large ? '2em' : '1em';
 
